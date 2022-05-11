@@ -125,8 +125,7 @@ const links = [
   },
 ]
 
-// markup
-const IndexPage = () => {
+const IndexPage: React.VFC = () => {
   return (
     <main style={pageStyles}>
       <title>Home Page</title>
