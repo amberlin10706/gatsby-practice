@@ -11,4 +11,4 @@ const Template: ComponentStory<typeof IndexPage> = (args) => (
   <IndexPage {...args} />
 );
 
-export const Page = Template.bind({});
+export const Demo = Template.bind({});

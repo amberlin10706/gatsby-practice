@@ -1,10 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import IndexPage from "../index";
+import NotFoundPage from "../404";
 
-describe("IndexPage", () => {
+describe("404 Page", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<IndexPage />).toJSON();
+    const tree = renderer.create(<NotFoundPage />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

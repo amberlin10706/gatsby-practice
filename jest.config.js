@@ -1,4 +1,5 @@
 module.exports = {
+  testEnvironment: "jsdom",
   transform: {
     "^.+\\.[jt]sx?$": `<rootDir>/jest-preprocess.js`,
   },
@@ -18,7 +19,8 @@ module.exports = {
     __PATH_PREFIX__: ``,
   },
   testURL: `http://localhost`,
-  setupFiles: ["<rootDir>/loadershim.js", "<rootDir>/jest-setup.js"],
+  setupFiles: ["<rootDir>/loadershim.js"],
+  setupFilesAfterEnv: ["<rootDir>/jest-setup.js"],
   globalSetup: "./jest-global-setup.js",
   collectCoverageFrom: ["src/**/*.{ts,tsx}"],
   coveragePathIgnorePatterns: [],
