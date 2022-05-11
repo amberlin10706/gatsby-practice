@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import IndexPage from "../../pages";
+import IndexPage from "../index";
 
 describe("IndexPage", () => {
   it("renders correctly", () => {
