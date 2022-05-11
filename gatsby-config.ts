@@ -23,7 +23,7 @@ const config: GatsbyConfig = {
         path: "./src/images/",
       },
     },
-    "gatsby-plugin-postcss"
+    "gatsby-plugin-postcss",
   ],
 };
 
